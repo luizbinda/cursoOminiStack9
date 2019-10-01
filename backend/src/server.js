@@ -1,6 +1,12 @@
 const express = require('express')
+const mongoose = require('mongoose')
 const routes = require('./routes')
 const app = express()
+
+mongoose.connect('mongodb+srv://oministack:oministack@oministack9-w9dzo.mongodb.net/oministack9?retryWrites=true&w=majority', {
+    useNewUrlParser : true,
+    useUnifiedTopology : true
+})
 const port = 3333
 
 // GET, POST, PUT, DELETE
