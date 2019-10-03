@@ -17,7 +17,7 @@ module.exports = {
 
         const user = await User.findById(user_id)
 
-        if(user == null)
+        if(!user)
             return res.status(400).json({ erro : 'User does not exists'})
 
         const spot = await Spot.create({
