@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-html, body, #root{
+html body #root{
   min-height: 100%;
 }
 
@@ -17,7 +17,7 @@ body {
   -webkit-font-smoothing: antialiased !important;
 }
 
-body, input, button {
+body input button {
   font-family: 'roboto', Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
@@ -51,11 +51,17 @@ body, input, button {
   flex-direction: column;
 }
 
-.content form, label{
+.content form label{
   font-size: 14px;
   color: #444;
   font-weight: bold;
   margin-bottom: 8px;
+}
+
+.content form label span{
+  font-weight: normal;
+  color: #999;
+  font-size: 12px;
 }
 
 .content input{
