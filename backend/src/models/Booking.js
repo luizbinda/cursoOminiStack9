@@ -9,7 +9,7 @@ const BookingSchema = new mongoose.Schema({
         ref : 'User'
     },
     spot: {
-        //pegar id do usuario no banco
+        //pegar id do spot no banco
         type: mongoose.Schema.Types.ObjectId,
         ref : 'Spot'
     }
